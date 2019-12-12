@@ -1,6 +1,5 @@
 import React from 'react';
-import {Card,Form,Button,Row,Col} from 'react-bootstrap';
-import ReactTable from 'react-table';
+import {Card,CardBody,CardHeader,Form,Row,Col,FormGroup,Label} from 'reactstrap';
 
 class TreeViewDetails extends React.Component{
 
@@ -13,89 +12,89 @@ class TreeViewDetails extends React.Component{
                 <div className="container">
             {this.props.selectedOption}
             <Card>
-                <Card.Header>Modal Details</Card.Header>
-                <Card.Body>
+                <CardHeader>Modal Details</CardHeader>
+                <CardBody>
                 <Form>
                 <Row>
                     <Col md={6}>
-                    <Form.Group as={Row} controlId="modelid">
-                        <Form.Label column md={4}>
+                    <FormGroup as={Row} controlId="modelid">
+                        <Label column md={4}>
                        Model Id
-                        </Form.Label>
+                        </Label>
                         <Col md={8}>
-                        <Form.Control plaintext readOnly value={modalObj.modelId}/>
+                       {modalObj.modelId}
                         </Col>
-                    </Form.Group>
-                    <Form.Group as={Row} controlId="name">
-                        <Form.Label column md={4}>
+                    </FormGroup>
+                    <FormGroup as={Row} controlId="name">
+                        <Label column md={4}>
                         Name
-                        </Form.Label>
+                        </Label>
                         <Col md={8}>
-                        <Form.Control plaintext readOnly value={modalObj.name}/>
+                        {modalObj.name}
                         </Col>
-                    </Form.Group>
-                    <Form.Group as={Row} controlId="category">
-                        <Form.Label column md={4}>
+                    </FormGroup>
+                    <FormGroup as={Row} controlId="category">
+                        <Label column md={4}>
                         Category
-                        </Form.Label>
+                        </Label>
                         <Col md={8}>
-                        <Form.Control plaintext readOnly value={modalObj.modelCategory}/>
+                        {modalObj.modelCategory}
                         </Col>
-                    </Form.Group>
-                    <Form.Group as={Row} controlId="modelInst">
-                        <Form.Label column md={4}>
+                    </FormGroup>
+                    <FormGroup as={Row} controlId="modelInst">
+                        <Label column md={4}>
                         model Inst
-                        </Form.Label>
+                        </Label>
                         <Col md={8}>
-                        <Form.Control plaintext readOnly value={modalObj.modelInst}/>
+                        {modalObj.modelInst}
                         </Col>
-                    </Form.Group>
-                    <Form.Group as={Row} controlId="modelFormula">
-                        <Form.Label column md={4}>
+                    </FormGroup>
+                    <FormGroup as={Row} controlId="modelFormula">
+                        <Label column md={4}>
                         model Formula
-                        </Form.Label>
+                        </Label>
                         <Col md={8}>
-                        <Form.Control plaintext readOnly value={modalObj.modelFormula}/>
+                        {modalObj.modelFormula}
                         </Col>
-                    </Form.Group>
+                    </FormGroup>
                     </Col>
                     <Col md={6}>
-                    <Form.Group as={Row} controlId="description">
-                        <Form.Label column md={4}>
+                    <FormGroup as={Row} controlId="description">
+                        <Label column md={4}>
                         Model Description
-                        </Form.Label>
+                        </Label>
                         <Col md={8}>
-                        <Form.Control plaintext readOnly value={modalObj.modelDescription}/>
+                        {modalObj.modelDescription}
                         </Col>
-                    </Form.Group>
-                    <Form.Group as={Row} controlId="modelType">
-                        <Form.Label column md={4}>
+                    </FormGroup>
+                    <FormGroup as={Row} controlId="modelType">
+                        <Label column md={4}>
                        Model Type
-                        </Form.Label>
+                        </Label>
                         <Col md={8}>
-                        <Form.Control plaintext readOnly value={modalObj.modelType}/>
+                        {modalObj.modelType}
                         </Col>
-                    </Form.Group>
-                    <Form.Group as={Row} controlId="modelSegId">
-                        <Form.Label column md={4}>
+                    </FormGroup>
+                    <FormGroup as={Row} controlId="modelSegId">
+                        <Label column md={4}>
                        Model SegId
-                        </Form.Label>
+                        </Label>
                         <Col md={8}>
-                        <Form.Control plaintext readOnly value={modalObj.modelSegld}/>
+                       {modalObj.modelSegld}
                         </Col>
-                    </Form.Group>
-                    <Form.Group as={Row} controlId="modelFormula1">
-                        <Form.Label column md={4}>
+                    </FormGroup>
+                    <FormGroup as={Row} controlId="modelFormula1">
+                        <Label column md={4}>
                        Model Formula1
-                        </Form.Label>
+                        </Label>
                         <Col md={8}>
-                        <Form.Control plaintext readOnly value={modalObj.modelFormula1}/>
+                       {modalObj.modelFormula1}
                         </Col>
-                    </Form.Group>
+                    </FormGroup>
                     </Col>
                 </Row>
                 </Form>
-                </Card.Body>
+                </CardBody>
                 </Card>
                
             </div>
